@@ -8,12 +8,12 @@ function App() {
   
   // replace 'false' with a state variable that can be toggled between true and false
   // this will be used for the Dark Mode Toggle feature
-  const appClass = !isOn ? "App dark" : "App";
+  const appClass = !isOn ? "App" : "App dark";
 
 
   function handleMode(){
     isOn = ! isOn;
-    let newMode = isOn? 'Dark Mode': 'Light Mode';
+    let newMode = isOn? 'Light Mode': 'Dark Mode';
     setMode(newMode);
   }
 
